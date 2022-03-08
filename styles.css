@@ -34,7 +34,7 @@ article {
   h1 {
     font-size: 245px;
     line-height: 1.0;
-    font-family:'Lexend Peta', sans-serif;
+    font-family: 'Jura', sans-serif;
     max-inline-size: 15ch;
     margin: auto;
   }
@@ -54,7 +54,7 @@ article {
     color: rgb(236,178,161);
   }**/
   h6 {
-    font-family: 'Lexend Peta', sans-serif;
+    font-family: 'Jura', sans-serif;
     font-size: 30px;
     text-align: center;
     color: rgb(143, 18, 18);
