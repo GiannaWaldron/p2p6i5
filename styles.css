@@ -1,0 +1,223 @@
+article {
+    background: radial-gradient(
+      hsl(346 71.4% 60.2%),
+      hsl(0 34.5% 45.5%), 
+      hsl(346 96.2% 31.2%),
+      hsl(346 95.6% 17.6%) 
+    ) fixed;
+    -webkit-background-clip: text;
+    -webkit-box-decoration-break: clone;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    transform: translateZ(0);
+    position: inline;
+  } 
+  
+  body {
+    background: hsl(346 93.9% 6.5%);
+    position: inline;
+    color: white;
+    min-block-size: 200vh;
+    min-inline-size: 100%;
+    padding: 5vmin;
+    box-sizing: border-box;
+    display: block;
+    place-content: center;
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: min(200%, 5vmin);
+  }
+  
+  h1, p, body {
+    margin: 0;
+  }
+  
+  h1 {
+    font-size: 245px;
+    line-height: 1.0;
+    font-family:'Lexend Peta', sans-serif;
+    max-inline-size: 15ch;
+    margin: auto;
+  }
+  /**h5 {
+    font-size: 50px;
+    font-family:'Michroma', sans-serif ;
+    color: rgb(236,178,161);
+  }
+  h5:hover{
+    transition: blur(80px);
+    transform: rotate(-90deg);
+    color: rgb(143, 18, 18);
+    font-size: 20px;
+  }**/
+  /**h6:hover{
+    color: rgb(143, 18, 18);
+    color: rgb(236,178,161);
+  }**/
+  h6 {
+    font-family: 'Lexend Peta', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: rgb(143, 18, 18);
+    display: flex;
+    line-height: 45px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 80px auto;
+    width: 675px;
+    height: 675px;
+    background:hsl(346 93.9% 6.5%);
+    border-radius: 75px;
+    letter-spacing: 2px;
+    transition: 1s box-shadow;
+  }
+  
+  h6:hover {
+    box-shadow: 0 5px 35px 0px rgba(0,0,0,.1);
+  }
+  
+  h6:hover::before, div:hover::after {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 675px;
+    height: 675px;
+    background:  hsl(346 96.2% 31.2%);
+    border-radius: 75px;
+    z-index: -1;
+    animation: 1s clockwise infinite;
+  }
+  
+  h6:hover:after {
+    background: #F3CE5E;
+    animation: 2s counterclockwise infinite;
+  }
+  
+  @keyframes clockwise {
+    0% {
+      top: -5px;
+      left: 0;
+    }
+    12% {
+      top: -2px;
+      left: 2px;
+    }
+    25% {
+      top: 0;
+      left: 5px;    
+    }
+    37% {
+      top: 2px;
+      left: 2px;
+    }
+    50% {
+      top: 5px;
+      left: 0;    
+    }
+    62% {
+      top: 2px;
+      left: -2px;
+    }
+    75% {
+      top: 0;
+      left: -5px;
+    }
+    87% {
+      top: -2px;
+      left: -2px;
+    }
+    100% {
+      top: -5px;
+      left: 0;    
+    }
+  }
+  
+  @keyframes counterclockwise {
+    0% {
+      top: -5px;
+      right: 0;
+    }
+    12% {
+      top: -2px;
+      right: 2px;
+    }
+    25% {
+      top: 0;
+      right: 5px;    
+    }
+    37% {
+      top: 2px;
+      right: 2px;
+    }
+    50% {
+      top: 5px;
+      right: 0;    
+    }
+    62% {
+      top: 2px;
+      right: -2px;
+    }
+    75% {
+      top: 0;
+      right: -5px;
+    }
+    87% {
+      top: -2px;
+      right: -2px;
+    }
+    100% {
+      top: -5px;
+      right: 0;    
+    }
+  }
+  
+  p {
+    font-family: 'Cedarville Cursive', cursive;
+    margin-top: 1ch;
+    line-height: 1.35;
+    max-inline-size: 40ch;
+    margin: auto;
+    kerning: 10px;
+    text-align: left;
+  }
+  img {
+      animation-name: spin;
+      animation-duration: 8000ms;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear; 
+    } 
+    @keyframes spin {
+        from {
+            transform:rotate(0deg);
+        }
+        to {
+            transform:rotate(360deg);
+        }
+    }
+  .button {
+      filter: drop-shadow(0px 0px 0px hsl(0 20% 77.5%));
+      transition: all 0.3s linear;
+      transition: all 0.3s linear;
+      transition: all 0.3s linear;	
+  }
+  .button:hover {
+      filter: drop-shadow(0px 0px 35px hsl(0 34.5% 45.5%));
+  }
+  .button {
+      width: 50vh;
+      padding: 100px;
+      filter: drop-shadow(0px 0px 0px hsl(0 20% 77.5%));
+        transition: all 0.3s linear;
+        transition: all 0.3s linear;
+        transition: all 0.3s linear;
+    
+    }
+    .button:hover {
+        filter: drop-shadow(0px 0px 35px hsl(0 34.5% 45.5%));
+    }
+  
+  html {
+    block-size: 100%;
+    inline-size: 100%;
+    text-align: center;
+  }
